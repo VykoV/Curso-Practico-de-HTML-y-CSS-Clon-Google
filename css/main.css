@@ -1,0 +1,176 @@
+/*Clon google*/
+body{
+    margin:0; /* Saco los margenes que vienen por defecto*/
+    padding: 0; /* Saco padding que vienen por defecto*/
+    font-size: 13px; /* Achico la letra */
+    font-family: Arial, Helvetica, sans-serif; /* Cambio letras */
+}
+
+a{
+    text-decoration: none; 
+    cursor: pointer; /* cambia el cursor  */
+}
+
+header{
+    width:100%;
+    height:100px; /* Altura del header */
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+header nav .nav-right-section{
+    width:250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: black;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left:10px;
+}
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+/* Imagen google */
+main .main-logo{        
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img {  /* Tamaño de la imagen*/
+    width: 75%;
+}
+
+/* Seccion input */
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;  
+    height: 40px;
+    border: none; /* sacar borde del input*/
+    outline: none; /* sacar el delineado azul*/
+}
+
+/* Sombra al input */
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon{
+    background-image: url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Botones Google*/
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block; /* Botones uno al lado del otro */
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none ;
+    display: flex;
+    padding-left: 0px;
+}
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+    
+}
